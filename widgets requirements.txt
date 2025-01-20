@@ -1,0 +1,23 @@
+Para trabalhar com gráficos interativos no JupyterLab:
+conda update --all
+
+install ipywidgets
+conda install -c conda-forge ipywidgets
+
+Na célula:
+!jupyter labextension list
+
+JupyterLab v4.2.5
+/home/renato/anaconda3/share/jupyter/labextensions
+        jupyter-matplotlib v0.11.6 enabled OK
+        jupyterlab-plotly v5.24.1 enabled  X
+        @pyviz/jupyterlab_pyviz v3.0.2 enabled OK
+        @jupyter-notebook/lab-extension v7.2.2 enabled OK
+        @lckr/jupyterlab_variableinspector v3.1.0 enabled OK (python, lckr_jupyterlab_variableinspector)
+        @jupyter-widgets/jupyterlab-manager v5.0.13 enabled OK (python, jupyterlab_widgets)
+
+plotly may be installed using pip:
+pip install plotly==5.24.1
+
+or conda:
+conda install -c plotly plotly=5.24.1
